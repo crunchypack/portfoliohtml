@@ -114,8 +114,10 @@ hr {
 .edu h4 {
   color: #e9e9ec;
 }
-.jobs h5,
-.edu h5 {
+.job-title {
+  font-size: 0.8em;
+}
+.job-desc {
   font-size: 0.8em;
 }
 .year {
