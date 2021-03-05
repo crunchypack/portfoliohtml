@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #3b3a38;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+#container {
+  background-color: rgb(30, 31, 31);
+  width: 70%;
+  padding: 2%;
+  margin: 5% auto;
+  color: aliceblue;
+  font-size: 16px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+#session_one {
+  display: flex;
+}
+.title {
+  padding: 0 3% 3% 3%;
+  align-self: flex-start;
+}
+
+.title img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #c0c0c2;
+}
+.gen_info {
+  clear: left;
+  order: 3;
+}
+.gen_info span {
+  color: gray;
+}
+.bio {
+  width: 100%;
+  font-size: 1.3em;
+  flex-grow: 2;
+  align-self: flex-start;
+}
+.bio h3 {
+  color: #00abb8;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #0d5e64;
+}
+
+/* visited link */
+a:visited {
+  color: #0d5e64;
+}
+
+/* mouse over link */
+a:hover {
+  color: #06c1f0;
+}
+a:active {
+  color: crimson;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #0d5e64;
+}
+
+#session_two {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#session_two h3 {
+  color: #e9e9ec;
+}
+.exp {
+  padding: 1%;
+  width: 55%;
+}
+.jobs i,
+.edu i {
+  padding-right: 1%;
+
+  padding-top: 0.5%;
+  color: #00abb8;
+}
+.jobs,
+.edu {
+  color: #c0c0c2;
+  font-size: 1.3em;
+}
+.jobs h3,
+.edu h3 {
+  background-color: #3b3a38;
+  padding: 1% 0 1% 1%;
+}
+.jobs h4,
+.edu h4 {
+  color: #e9e9ec;
+}
+.jobs h5,
+.edu h5 {
+  font-size: 0.8em;
+}
+.year {
+  float: right;
+  font-size: 0.9em;
+  color: #5f5f5f;
+}
+aside {
+  width: 25%;
+}
+.progress {
+  width: 100%;
+  background-color: #3b3a38;
+}
+.progressfill {
+  background-color: #0d5e64;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 120%;
+}
+.node {
+  width: 90%;
+}
+.java {
+  width: 70%;
+  background-color: blueviolet;
+}
+.html {
+  width: 95%;
+  background-color: #00c2fd;
+}
+.CSS {
+  width: 90%;
+  background-color: #3b3be2;
+}
+.php {
+  width: 95%;
+  background-color: darkseagreen;
+}
+.vue {
+  width: 70%;
+  background-color: darkgoldenrod;
+}
+.prof {
+  width: 100%;
+  display: flex;
+}
+.prof div {
+  text-align: center;
+  margin: 2%;
+  width: 5%;
+  background-color: #c0c0c2;
+  color: #c0c0c2;
+  border-radius: 50%;
+}
+.eng div {
+  background-color: #00c2fd;
+  color: #00c2fd;
+}
+.swe div {
+  background-color: darkseagreen;
+  color: darkseagreen;
+}
+.spa div {
+  background-color: blueviolet;
+  color: blueviolet;
+}
+.spa div:last-child {
+  background: linear-gradient(90deg, blueviolet 95%, #c0c0c2 5%);
+}
