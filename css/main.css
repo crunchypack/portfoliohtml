@@ -133,33 +133,124 @@ aside {
   background-color: #3b3a38;
 }
 .progressfill {
-  background-color: #0d5e64;
+  /* background-color: #0d5e64; */
   text-align: right;
   font-weight: bolder;
   font-size: 120%;
 }
 .node {
   width: 90%;
+  animation-name: node;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+  animation-direction: normal;
+}
+@keyframes node {
+  0% {
+    background-color: #3b3a38;
+    color: #3b3a38;
+  }
+  100% {
+    background-color: #0d5e64;
+    color: white;
+  }
 }
 .java {
   width: 70%;
-  background-color: blueviolet;
+  animation-name: java;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  animation-direction: normal;
+}
+@keyframes java {
+  0% {
+    background-color: #3b3a38;
+    color: #3b3a38;
+  }
+  100% {
+    background-color: blueviolet;
+    color: white;
+  }
 }
 .html {
   width: 95%;
-  background-color: #00c2fd;
+  animation-name: html;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  animation-direction: normal;
+}
+@keyframes html {
+  from {
+    background-color: #3b3a38;
+    color: #3b3a38;
+  }
+  to {
+    background-color: #00c2fd;
+    color: white;
+  }
 }
 .CSS {
   width: 90%;
-  background-color: #3b3be2;
+  animation-name: css;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  animation-direction: normal;
+}
+@keyframes css {
+  from {
+    background-color: #3b3a38;
+    color: #3b3a38;
+  }
+  to {
+    background-color: #3b3be2;
+    color: white;
+  }
 }
 .php {
   width: 95%;
-  background-color: darkseagreen;
+  animation-name: php;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  animation-direction: normal;
+}
+@keyframes php {
+  from {
+    background-color: #3b3a38;
+    color: #3b3a38;
+  }
+  to {
+    background-color: darkseagreen;
+    color: white;
+  }
 }
 .vue {
   width: 70%;
-  background-color: darkgoldenrod;
+  animation-name: vue;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  animation-direction: normal;
+}
+@keyframes vue {
+  from {
+    background-color: #3b3a38;
+    color: #3b3a38;
+  }
+  to {
+    background-color: darkgoldenrod;
+    color: white;
+  }
 }
 .prof {
   width: 100%;
