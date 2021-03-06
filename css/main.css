@@ -141,16 +141,16 @@ aside {
 .node {
   width: 90%;
   animation-name: node;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
+  color: #3b3a38;
 }
 @keyframes node {
   0% {
     background-color: #3b3a38;
-    color: #3b3a38;
   }
   100% {
     background-color: #0d5e64;
@@ -160,10 +160,10 @@ aside {
 .java {
   width: 70%;
   animation-name: java;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
 }
 @keyframes java {
@@ -179,10 +179,10 @@ aside {
 .html {
   width: 95%;
   animation-name: html;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
 }
 @keyframes html {
@@ -198,10 +198,10 @@ aside {
 .CSS {
   width: 90%;
   animation-name: css;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
 }
 @keyframes css {
@@ -217,10 +217,10 @@ aside {
 .php {
   width: 95%;
   animation-name: php;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
 }
 @keyframes php {
@@ -236,10 +236,10 @@ aside {
 .vue {
   width: 70%;
   animation-name: vue;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-direction: normal;
 }
 @keyframes vue {
@@ -278,4 +278,81 @@ aside {
 }
 .spa div:last-child {
   background: linear-gradient(90deg, blueviolet 95%, #c0c0c2 5%);
+}
+.projects {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.proj-title {
+  margin: 0;
+  font-size: 2em;
+}
+.project_item {
+  background-color: beige;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+.project_item img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  #session_one {
+    display: block;
+  }
+  .title img {
+    display: none;
+  }
+  .gen_info {
+    float: right;
+  }
+  .prof div {
+    width: 15%;
+  }
+  .projects {
+    margin: 2% auto;
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
+  .project_item {
+    width: 90%;
+    height: auto;
+    margin: 10% 0;
+  }
+  .project_item h3 {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 414px) {
+  #container {
+    font-size: 0.9em;
+    width: 95%;
+  }
+  .gen_info {
+    float: none;
+  }
+  #session_two {
+    display: block;
+    width: 90%;
+  }
+  .exp {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  .prof div {
+    width: 5%;
+  }
+  .proj-title {
+    margin-top: 10%;
+  }
 }
