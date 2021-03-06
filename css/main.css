@@ -331,6 +331,15 @@ aside {
     font-size: 1.3em;
   }
 }
+@media (max-width: 1714px) {
+  .projects {
+    flex-direction: column;
+    height: 100%;
+  }
+  .project_item {
+    margin: 5% 0;
+  }
+}
 @media (max-width: 414px) {
   #container {
     font-size: 0.9em;
