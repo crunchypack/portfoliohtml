@@ -18,7 +18,7 @@ p {
 #container {
   background-color: rgb(30, 31, 31);
   width: 70%;
-  padding: 2%;
+  padding: 5%;
   margin: 5% auto;
   color: aliceblue;
   font-size: 16px;
@@ -282,7 +282,7 @@ aside {
 .projects {
   width: 100%;
   height: 300px;
-  margin: 0 auto;
+  margin: 2% auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -337,7 +337,7 @@ aside {
     height: 100%;
   }
   .project_item {
-    margin: 5% 0;
+    margin: 30% 0;
   }
 }
 @media (max-width: 414px) {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API</title>
+</head>
+<body>
+    <div class="container">
+        <div class="method">
+            <h2>Create user</h2>
+            <p>URL: https://lobonode.ddns.net/ft/api/create</p>
+            <p>METHOD: GET </p>
+            <p>BODY: JSON {email: uniqueEmail, password:desiredPass}</p>
+            <p>Response: JSON {status:true, user} OR error</p>
+        </div>
+        <div class="method">
+            <h2>Login</h2>
+            <p>URL: https://lobonode.ddns.net/ft/api/login</p>
+            <p>METHOD: POST </p>
+            <p>BODY: JSON {email: email, password:chosenPass}</p>
+            <p>Response: JSON {status:true, sessionDetails} OR if wrong credentials {status:false}</p>
+        </div>
+        <div class="method">
+            <h2>Check if user is logged in</h2>
+            <p>URL: https://lobonode.ddns.net/ft/api/logged</p>
+            <p>METHOD: GET </p>
+            <p>BODY: NO BODY</p>
+            <p>Response: JSON {status:true, UserName} OR  {status:false}</p>
+        </div>
+        <div class="method">
+            <h2>Logout user</h2>
+            <p>URL: https://lobonode.ddns.net/ft/api/logout</p>
+            <p>METHOD: GET </p>
+            <p>BODY: NO BODY</p>
+            <p>Response: JSON {status:true, UserName} OR  {message:error}</p>
+        </div>
+        <div class="method">
+            <h2>AddItem</h2>
+            <p>URL: https://lobonode.ddns.net/ft/addItem</p>
+            <p>METHOD: POST </p>
+            <h3>Body</h3>
+            <p>
+                { <br>
+                    ean: number UNIQUE REQUIRED <br>
+                    name: text REQUIRED <br>
+                    brand: text REQUIRED <br>
+                    weight: number <br>
+                    energy: number <br>
+                    carbs: number <br>
+                    sodium: number <br>
+                    fat: number <br>
+                    satfat: number <br>
+                    salt: number <br>
+                    sugar: number <br>
+                    contains: Array of text <br>
+                    organic: boolean <br>
+                    fairtrade: boolean <br>
+                    eco: boolean <br>
+                    vegetarian: boolean <br>
+                    vegan: boolean <br>
+                    healthnotes: text <br>
+
+                }
+
+            </p>
+            <p>Response: JSON {message: item added, status:true} OR  ERROR</p>
+        </div>
+        <div class="method">
+            <h2>Get all items</h2>
+            <p>URL: https://lobonode.ddns.net/ft/getItems</p>
+            <p>METHOD: GET </p>
+            <p>BODY: NO BODY</p>
+            <p>Response JSON of all items </p>
+    </div>
+</body>
+</html>

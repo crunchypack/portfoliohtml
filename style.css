@@ -1,0 +1,15 @@
+body{
+    margin:0 auto;
+    padding: 0;
+    width: 90%;
+}
+.container{
+    width: 85%;
+    margin: 2% auto;
+}
+.method{
+    margin: 2% 0;
+    background-color: bisque;
+    padding: 2%;
+    font-size: 16px;
+}
